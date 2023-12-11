@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./script.js" defer></script>
+  <link rel="stylesheet" href="./style.css">
+  <title>Pet Tracker</title>
+</head>
+<body>
+  <header>
+    <h1>Pet Tracker</h1> 
+  </header>
+  <main>
+    <section id="form-section">
+      <form id="pet-form">
+        <div>
+          <label for="name">Pet Name<sup>*</sup>:</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+          <label for="image">Profile Picture<sup>*</sup></label>
+          <input type="text" name="image" id="image" placeholder="Picture URL" required>
+        </div>
+        <fieldset>
+          <legend for="species">Species<sup>*</sup></legend>
+          <input type="radio" name="species" id="cat" value="cat" required>
+          <label for="cat">Cat</label><br>
+          <input type="radio" name="species" id="dog" value="dog" required>
+          <label for="dog">Dog</label><br>
+          <input type="radio" name="species" id="bird" value="bird" required>
+          <label for="bird">Bird</label>
+        </fieldset>
+        <div>
+          <input type="checkbox" name="friendly" id="friendly">
+          <label for="friendly">Are They Friendly?</label>
+        </div>
+        
+        <button type="submit">Add Pet!</button>
+      </form>
+    </section>
+    <section id="pet-list">
+      <h2>Pet List</h2>
+      <ul></ul>
+    </section>
+  </main>
+</body>
+</html>
